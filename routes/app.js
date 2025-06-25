@@ -134,7 +134,7 @@ router.put('/items/:id', async (req, res) => {
         return res.status(400).json({ error: 'No image file uploaded' });
       }
   
-      const imageUrl = `http://localhost:3000/uploads/${req.file.filename}`;
+      const imageUrl = `https://jpr-backend.onrender.com/uploads/${req.file.filename}`;
       const updated = await Items.findByIdAndUpdate(
         req.params.id,
         { imageUrl },
