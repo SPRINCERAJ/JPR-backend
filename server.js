@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Connect to MongoDB
 connectDB();
 app.use(cors({
-    origin: 'http://localhost:4200', // or use '*' for any origin (not recommended in production)
+    origin: 'https://jprcrackers.com', // or use '*' for any origin (not recommended in production)
     credentials: true
   }));
 // Middleware
